@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.13",
     "html-react-parser": "^5.1.12",
     "microcms-js-sdk": "^3.1.2",
     "next": "14.2.5",

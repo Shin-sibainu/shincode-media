@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { siteData } from "@/config/site";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const NotoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 
@@ -46,6 +47,7 @@ export default function RootLayout({
           <Footer />
         </div>
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_GA_ID!} />
     </html>
   );
 }
